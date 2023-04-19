@@ -1,0 +1,35 @@
+{
+    "name": "codespaces-blank",
+    "version": "0.1.0",
+    "description": "",
+    "main": "server.ts",
+    "scripts": {
+        "start": "node src/server.js",
+        "build": "npx tsc src/server.ts",
+        "dev": "npx nodemon src/server.ts",
+        "test": "npx tape -r ts-node/register 'src/**/*.test.ts' | tap-spec",
+        "update": "ncu -u"
+    },
+    "author": "Thibaut Constant",
+    "license": "gpl-3.0",
+    "dependencies": {
+        "fastify": "^4.15.0",
+        "fastify-mongoose": "^0.3.0",
+        "mongoose": "^7.0.4"
+    },
+    "devDependencies": {
+        "@types/mongoose": "^5.11.97",
+        "@types/node": "^18.15.11",
+        "@types/sinon": "^10.0.14",
+        "@types/tape": "^4.13.4",
+        "fastify-tsconfig": "^1.0.1",
+        "mongodb-memory-server": "^8.12.2",
+        "nodemon": "^2.0.22",
+        "npm-check-updates": "^16.10.8",
+        "sinon": "^15.0.3",
+        "tap-spec": "^5.0.0",
+        "tape": "^5.6.3",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    }
+}
